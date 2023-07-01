@@ -23,6 +23,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    display: block;
 }
 
 .section-courses__title{
