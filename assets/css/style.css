@@ -1,6 +1,8 @@
 @import './normalize.css';
 @import './typography.css';
 @import './header.css';
+@import './footer.css';
+@import './form.css';
 
 @import './pages/home.css';
 
@@ -54,10 +56,23 @@ h1, h2, h3, h4, h5{
     line-height: 24px;
     border-radius: 15px;
     transition: background-color 0.4s;
+    cursor: pointer;
 }
 
 .styled-button:hover{
     background-color: var(--yellow);
+}
+
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -32px;
+    margin-top: -32px;
+}
+
+.socials a{
+    margin-left: 32px;
+    display: block;
 }
 
 @media(max-width: 1350px){

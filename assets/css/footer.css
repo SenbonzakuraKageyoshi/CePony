@@ -1,0 +1,139 @@
+.footer{
+    background: var(--gray);
+    padding: 85px 0px 123px 0px;
+}
+
+.footer-item__name{
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Days One';
+}
+
+.footer-link{
+    position: relative;
+    color: var(--black);
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.footer-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background: var(--black);
+    transition: width 0.4s;
+}
+
+.footer-link:hover::before{
+    width: 100%;
+}
+
+.footer-item__links__list{
+    margin-top: 21px;
+}
+
+.footer-item__links__list li:not(:first-child){
+    margin-top: 15px;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .socials{
+    margin-left: -32px;
+    margin-top: 28px;
+}
+
+.footer__other__links__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 47px;
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
+.footer__other__links__list li{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.footer__rights{
+    margin-top: 19px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media(max-width: 1350px){
+    .footer-item__name{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .footer{
+        padding: 80px 0px;
+    }
+
+    .footer-link{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .footer__other__links__list{
+        margin-top: 62px;
+    }
+
+    .footer__rights{
+        margin-top: 17px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 780px){
+    .footer-item__name{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .footer-link{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .footer__other__links__list{
+        margin-top: 30px;
+    }
+
+    .footer__rights{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 12px;
+    }
+
+    .footer{
+        padding: 50px 0px 30px 0px;
+        text-align: center;
+    }
+
+    .footer__content{
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__other__links__list{
+        justify-content: center;
+    }
+
+    .footer-item:not(:first-child){
+        margin-top: 34px;
+    }
+}

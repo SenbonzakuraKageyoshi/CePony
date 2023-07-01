@@ -1,0 +1,48 @@
+.form-input, textarea{
+    width: 538px;
+    height: 60px;
+    border: none;
+    background: var(--gray);
+    border-radius: 15px;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 44px;
+}
+
+.form-item:not(:first-child){
+    margin-top: 30px;
+}
+
+.form .styled-button{
+    margin-top: 39px;
+}
+
+@media(max-width: 1350px){
+    .section-form__content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 40px;
+    }
+
+    .form-input, textarea{
+        width: 465px;
+    }
+}
+
+@media(max-width: 780px){
+    .form{
+        margin-top: 28px;
+    }
+
+    .form-input, textarea{
+        width: 366px;
+        height: 50px;
+    }
+
+    .form .styled-button{
+        margin-top: 15px;
+    }
+}

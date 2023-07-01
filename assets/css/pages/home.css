@@ -195,7 +195,64 @@
     margin-top: 68px;
 }
 
+.section-testimonials__title{
+    text-align: center;
+}
+
+.testimonials__list-item{
+    max-width: 400px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.testimonials__list-item__author{
+    line-height: 30px;
+    font-size: 24px;
+    margin-top: 10px;
+    border-top: 1px solid var(--light-black);
+    text-align: right;
+}
+
+.testimonials__list{
+    display: flex;
+    justify-content: center;
+}
+
+.section-form__subtitle{
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--yellow);
+    font-family: 'Days One';
+}
+
+.section-form__text{
+    width: 426px;
+}
+
+.section-form{
+    padding: 100px 0px;
+}
+
+.section-form__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media(max-width: 1350px){
+    .section-form__text{
+        width: auto;
+    }
+
+    .section-form{
+        padding: 80px 0px;
+    }
+
+    .section-form__subtitle{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
     .courses__list-item__link{
         margin-top: 29px;
         font-size: 20px;
@@ -374,6 +431,15 @@
 }
 
 @media(max-width: 780px){
+    .section-form{
+        padding: 45px 0px;
+    }
+
+    .section-form__subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 11px;
+    }
 
     .courses__list-item img{
         width: 60px;
