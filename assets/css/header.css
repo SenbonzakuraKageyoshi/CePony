@@ -1,0 +1,215 @@
+.header{
+    background: var(--gray);
+    padding: 17px 0px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__list li div{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__list{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav li:not(:first-child){
+    margin-left: 30px;
+}
+
+.header__nav li{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__nav-link{
+    position: relative;
+    color: var(--black);
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.header__nav li img{
+    margin-left: 5px;
+}
+
+.header__nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background: var(--black);
+    transition: width 0.4s;
+}
+
+.header__nav-link:hover::before{
+    width: 100%;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__content__right, .header__content__left{
+    display: flex;
+    align-items: center;
+}
+
+.header__actions{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header__actions a:not(:first-child){
+    margin-left: 37px;
+}
+
+.header__actions a{
+    display: block;
+}
+
+.header__actions button{
+    display: none;
+    margin-left: 21px;
+}
+
+.header__nav-sublink__list{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: var(--white);
+    padding: 25px 0px 25px 13px;
+    width: 300px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 10;
+}
+
+.header__nav-sublink__list li:not(:first-child){
+    margin-left: 0px;
+    margin-top: 21px;
+}
+
+.header__nav li:nth-child(2):hover .header__nav-sublink__list{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__nav li:nth-child(4):hover .header__nav-sublink__list{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__nav li:nth-child(5):hover .header__nav-sublink__list{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width: 1200px){
+    .logo img{
+        width: 83px;
+        height: 53px;
+    }
+
+    .header__nav-link{
+        font-size: 14px;
+    }
+
+    .header__nav li:not(:first-child){
+        margin-left: 25px;
+    }
+
+    .header__nav-sublink__list li:not(:first-child){
+        margin-left: 0px;
+        margin-top: 21px;
+    }
+
+    .header__actions a:not(:first-child){
+        margin-left: 21px;
+    }
+
+    .header__actions a img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__actions{
+        margin-left: 70px;
+    }
+
+    .header__nav li img{
+        width: 20px;
+        height: 9px;
+    }
+}
+
+@media(max-width: 950px){
+    .header__actions button{
+        display: block;
+    }
+
+    .header{
+        padding: 8px 0px;
+        position: relative;
+    }
+
+    .header__nav{
+        background: var(--gray);
+        position: absolute;
+        top: 74px;
+        right: 0;
+        padding: 40px 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        z-index: 100;
+    }
+
+    .header__nav.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__nav__list{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header__nav li:not(:first-child){
+        margin-left: 0px;
+        margin-top: 21px;
+    }
+
+    .header__nav-sublink__list li:not(:first-child){
+        margin-left: 0px;
+        margin-top: 21px;
+    }
+
+    .header__nav-sublink__list{
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        margin-top: 21px;
+    }
+
+    .header__nav__list li{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
