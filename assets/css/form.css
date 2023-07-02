@@ -17,7 +17,41 @@
     margin-top: 39px;
 }
 
+.section-form__subtitle{
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--yellow);
+    font-family: 'Days One';
+}
+
+.section-form{
+    padding: 100px 0px;
+}
+
+.section-form__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-form__text{
+    width: 426px;
+}
+
 @media(max-width: 1350px){
+    .section-form__text{
+        width: auto;
+    }
+
+    .section-form{
+        padding: 80px 0px;
+    }
+
+    .section-form__subtitle{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
     .section-form__content{
         flex-direction: column;
         text-align: center;
@@ -33,6 +67,16 @@
 }
 
 @media(max-width: 780px){
+    .section-form{
+        padding: 45px 0px;
+    }
+
+    .section-form__subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 11px;
+    }
+
     .form{
         margin-top: 28px;
     }

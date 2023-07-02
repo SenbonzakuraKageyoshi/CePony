@@ -1,3 +1,6 @@
+@import '../form.css';
+@import '../section-testimonials.css';
+
 .section-top__title{
     max-width: 650px;
 }
@@ -195,62 +198,39 @@
     margin-top: 68px;
 }
 
-.section-testimonials__title{
-    text-align: center;
+.swiper{
+    margin-top: 50px;
+    max-width: 100%;
+    min-height: 250px;
 }
 
-.testimonials__list-item{
-    max-width: 400px;
-    font-size: 20px;
-    line-height: 26px;
+.swiper__wrapper{
+    position: relative;
 }
 
-.testimonials__list-item__author{
-    line-height: 30px;
-    font-size: 24px;
-    margin-top: 10px;
-    border-top: 1px solid var(--light-black);
-    text-align: right;
+.swiper-button-next{
+    top: -30px !important;
 }
 
-.testimonials__list{
-    display: flex;
-    justify-content: center;
+.swiper-button-prev{
+    top: -30px !important;
+    right: 80px !important;
+    left: auto !important;
 }
 
-.section-form__subtitle{
-    font-size: 32px;
-    line-height: 40px;
+.swiper-button-prev:after, .swiper-button-next:after{
+    color: var(--light-black);
+    font-size: 30px !important;
+    transition: color 0.4s;
+}
+
+.swiper-button-prev:hover:after, .swiper-button-next:hover:after{
     color: var(--yellow);
-    font-family: 'Days One';
-}
-
-.section-form__text{
-    width: 426px;
-}
-
-.section-form{
-    padding: 100px 0px;
-}
-
-.section-form__content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 @media(max-width: 1350px){
-    .section-form__text{
-        width: auto;
-    }
-
-    .section-form{
-        padding: 80px 0px;
-    }
-
-    .section-form__subtitle{
-        font-size: 24px;
-        line-height: 34px;
+    .swiper{
+        min-height: 220px;
     }
 
     .courses__list-item__link{
@@ -283,9 +263,11 @@
         padding: 92px 0px;
     }
 
-    .section-top__subtitle{
-        font-size: 40px;
-        line-height: 55px;
+    .section-help__descr{
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 549px;
+        margin-top: 0px;
     }
 
     .section-top__content .styled-button{
@@ -348,8 +330,12 @@
     }
     
     .section-help__content{
-        padding: 0px 0px 0px 53px;
+        padding: 0px 0px 70px 53px;
         align-items: flex-end;
+    }
+
+    .section-help__img{
+        transform: translateY(70px);
     }
     
     .section-help__descr{
@@ -431,14 +417,8 @@
 }
 
 @media(max-width: 780px){
-    .section-form{
-        padding: 45px 0px;
-    }
-
-    .section-form__subtitle{
-        font-size: 20px;
-        line-height: 30px;
-        margin-top: 11px;
+    .swiper{
+        min-height: 150px;
     }
 
     .courses__list-item img{
