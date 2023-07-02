@@ -2,13 +2,11 @@
 @import './typography.css';
 @import './header.css';
 @import './footer.css';
+@import './swiper.css';
+@import './vars.css';
 
-:root{
-    --white: #fff;
-    --black: #000;
-    --light-black: #2C2C33;
-    --yellow: #FFBD39;
-    --gray: #E8E8E8;
+html{
+    overflow-x: hidden;
 }
 
 a{
@@ -70,36 +68,6 @@ h1, h2, h3, h4, h5{
 .socials a{
     margin-left: 32px;
     display: block;
-}
-
-.swiper{
-    margin-top: 50px;
-    max-width: 100%;
-    min-height: 250px;
-}
-
-.swiper__wrapper{
-    position: relative;
-}
-
-.swiper-button-next{
-    top: -30px !important;
-}
-
-.swiper-button-prev{
-    top: -30px !important;
-    right: 80px !important;
-    left: auto !important;
-}
-
-.swiper-button-prev:after, .swiper-button-next:after{
-    color: var(--light-black);
-    font-size: 30px !important;
-    transition: color 0.4s;
-}
-
-.swiper-button-prev:hover:after, .swiper-button-next:hover:after{
-    color: var(--yellow);
 }
 
 @media(max-width: 1350px){

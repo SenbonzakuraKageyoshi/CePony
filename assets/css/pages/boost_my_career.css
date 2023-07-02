@@ -1,0 +1,12 @@
+@import '../section-info.css';
+
+.section-info__descr{
+    max-width: 538px;
+    margin-top: 45px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.section-info__content{
+    align-items: flex-start;
+}

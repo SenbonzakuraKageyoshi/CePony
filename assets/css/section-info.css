@@ -19,6 +19,21 @@
     justify-content: space-between;
 }
 
+.section-info .header__nav-sublink__list{
+    position: absolute;
+    top: 20px;
+    left: -75px;
+    background: var(--white);
+    padding: 25px 0px 25px 13px;
+    width: 300px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 10;
+}
+
 .section-info__main{
     margin-left: 20px;
 }
@@ -47,11 +62,54 @@
     margin-top: 29px;
 }
 
+.section-info__items-item li{
+    position: relative;
+}
+
+.section-info__items-item li:not(:first-child){
+    margin-top: 12px;
+}
+
+.section-info__items-item:first-child li:last-child:hover .header__nav-sublink__list{
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-info__items-item:last-child li:last-child:hover .header__nav-sublink__list{
+    opacity: 1;
+    visibility: visible;
+}
+
 .section-info__actions-item:hover{
     background-color: var(--yellow);
 }
 
+.section-info__items{
+    display: flex;
+}
+
+.section-info__items-item-name{
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 19px;
+}
+
+.section-info__items-item{
+    flex-direction: column;
+}
+
 @media(max-width: 1300px){
+    .section-info__items-item-name{
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 13px;
+    }
+
+    .section-info__items{
+        margin-left: 110px;
+        margin-top: 40px;
+    }
+
     .section-info__descr{
         max-width: 100%;
         margin-top: 20px;
@@ -78,10 +136,25 @@
 }
 
 @media(max-width: 780px){
+    .section-info__items-item-name{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .section-info__items-item:not(:first-child){
+        margin-top: 22px;
+    }
+
     .section-info__descr{
         font-size: 16px;
         line-height: 24px;
         transform: translateX(-55px);
+    }
+
+    .section-info__items{
+        margin-left: 0px;
+        margin-top: 28px;
+        flex-direction: column;
     }
 
     .section-info__title{
@@ -108,5 +181,10 @@
     .section-info__content div:first-child img{
         width: 40px;
         height: 40px;
+    }
+
+    .header__nav-sublink__list{
+        top: 20px;
+        left: 0px;
     }
 }

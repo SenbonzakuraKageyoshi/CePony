@@ -11,6 +11,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const subMenuBtns = document.querySelectorAll('.submenu-button');
 
     const submenuHandler = (e) => {
+        if(e.target.closest('li').querySelector('.header__nav-sublink__list.active')){
+            return e.target.closest('li').querySelector('ul').classList.remove('active');
+        }
         document.querySelectorAll('.header__nav-sublink__list').forEach((el) => el.classList.remove('active'))
         e.target.closest('li').querySelector('ul').classList.toggle('active');
     }

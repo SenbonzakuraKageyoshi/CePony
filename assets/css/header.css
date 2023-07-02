@@ -186,12 +186,13 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.4s;
-        z-index: 100;
+        z-index: -1;
     }
 
     .header__nav.active{
         opacity: 1;
         visibility: visible;
+        z-index: 100;
     }
 
     .header__nav__list{
@@ -219,6 +220,13 @@
     .header__nav__list li{
         flex-direction: column;
         align-items: start;
+    }
+}
+
+@media(max-width: 780px){
+    .submenu-button{
+        width: 20px !important;
+        height: 9px !important;
     }
 }
 
