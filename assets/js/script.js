@@ -6,5 +6,14 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('active');
     };
 
-    menuBtn.addEventListener('click', menuHandler)
+    menuBtn.addEventListener('click', menuHandler);
+
+    const subMenuBtns = document.querySelectorAll('.submenu-button');
+
+    const submenuHandler = (e) => {
+        document.querySelectorAll('.header__nav-sublink__list').forEach((el) => el.classList.remove('active'))
+        e.target.closest('li').querySelector('ul').classList.toggle('active');
+    }
+
+    subMenuBtns.forEach((el) => el.addEventListener('click', (e) => submenuHandler(e)))
 })
