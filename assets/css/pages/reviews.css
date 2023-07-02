@@ -1,0 +1,80 @@
+@import '../form.css';
+@import '../section-testimonials.css';
+
+.section-testimonials{
+    padding: 51px 0px 131px 0px;
+}
+
+.section-top__title{
+    max-width: 650px;
+}
+
+.section-top{
+    position: relative;
+    padding: 144px 0px 136px 0px;
+}
+
+.section-top__image{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: block;
+}   
+
+.section-top__subtitle{
+    color: var(--yellow);
+    font-size: 32px;
+    font-family: 'Days One';
+    line-height: 40px;
+    max-width: 536px;
+    margin-top: 19px;
+}
+
+@media(max-width: 1350px){
+    .section-top{
+        padding: 92px 0px;
+    }
+    
+    .section-top__subtitle{
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 424px;
+        margin-top: 10px;
+    }
+
+    .section-top__image{
+        width: 277px;
+        height: 345px;
+        top: 80px;
+    }   
+}
+
+@media(max-width: 950px){
+    .section-top__title{
+        max-width: 450px;
+    }
+}
+
+@media(max-width: 780px){
+    .section-top{
+        padding: 30px 0px;
+    }
+
+    .section-top__title{
+        max-width: 366px;
+    }
+
+    .section-top__subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 366px;
+    }
+
+    .section-top__image{
+        position: static;
+        margin: 0 auto;
+        margin-top: 42px;
+        width: 238px;
+        height: 296px;
+    }
+}

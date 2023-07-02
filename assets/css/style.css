@@ -72,7 +72,41 @@ h1, h2, h3, h4, h5{
     display: block;
 }
 
+.swiper{
+    margin-top: 50px;
+    max-width: 100%;
+    min-height: 250px;
+}
+
+.swiper__wrapper{
+    position: relative;
+}
+
+.swiper-button-next{
+    top: -30px !important;
+}
+
+.swiper-button-prev{
+    top: -30px !important;
+    right: 80px !important;
+    left: auto !important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    color: var(--light-black);
+    font-size: 30px !important;
+    transition: color 0.4s;
+}
+
+.swiper-button-prev:hover:after, .swiper-button-next:hover:after{
+    color: var(--yellow);
+}
+
 @media(max-width: 1350px){
+    .swiper{
+        min-height: 220px;
+    }
+    
     .title{
         font-size: 40px;
         line-height: 55px;
@@ -97,5 +131,11 @@ h1, h2, h3, h4, h5{
         font-size: 18px;
         line-height: 24px;
         border-radius: 10px;
+    }
+}
+
+@media(max-width: 780px){
+    .swiper{
+        min-height: 150px;
     }
 }
