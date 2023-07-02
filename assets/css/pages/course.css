@@ -1,0 +1,156 @@
+.section-top{
+    padding: 41px 0px 100px 0px;
+}
+
+aside{
+    max-width: 427px;
+    padding: 38px 0px 44px 0px;
+    background: var(--gray);
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.aside-item__name{
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.aside-item__name.active{
+    background-color: var(--yellow);
+}
+
+.aside-item__link{
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--black);
+    display: inline-block;
+    position: relative;
+}
+
+.aside-item__link:not(:first-child){
+    margin-top: 10px;
+}
+
+.aside-item__link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--black);
+    transition: width 0.4s;
+}
+
+.aside-item__link:hover::before{
+    width: 100%;
+}
+
+.aside-item:not(:first-child){
+    margin-top: 25px;
+}
+
+.section-top__content{
+    display: flex;
+}
+
+.course-name{
+    position: relative;
+    padding: 28px 0px 0px 42px;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.course-name::before{
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.course__main-info-item__value{
+    font-size: 32px;
+    line-height: 30px;
+    font-family: 'Days One';
+    display: flex;
+    align-items: flex-end;
+}
+
+.course__main-info-item__name{
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 15px;
+}
+
+.course__main-info-item:not(:first-child){
+    margin-top: 20px;
+}
+
+.course__main-info__wrapper{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.styled-button{
+    background: var(--yellow);
+    color: var(--black);
+    margin-left: 40px;
+}
+
+.styled-button:hover{
+    background: var(--light-black);
+    color: var(--white)
+}
+
+.course__main-info-price{
+    border-top: 1px solid var(--black);
+    font-size: 32px;
+    line-height: 30px;
+    font-family: 'Days One';
+    text-align: right;
+    margin-top: 10px;
+}
+
+.course-descr__item{
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+@media(max-width: 1200px){
+    aside{
+        display: none;
+    }
+
+    .course__main-info__wrapper{
+        max-width: 240px;
+
+    }
+
+    .course__main-info__wrapper{
+        flex-direction: column;
+    }
+
+    .styled-button{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .course__main-info{
+        display: flex;
+    }
+
+    .course-descr__item{
+        max-width: 630px;
+        margin-left: 30px;
+    }
+}
