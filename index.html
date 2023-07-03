@@ -9,6 +9,31 @@
     <title>Ce Pony</title>
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-modal">
+                <img src="./assets/images/close.svg" alt="close" class="close-modal-icon">
+            </button>
+            <div class="modal-content__main">
+                <div class="modal-name">Enroll now</div>
+                    <form class="form">
+                        <div class="form-item">
+                            <input type="text" placeholder="Name*" class="form-input">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" placeholder="Cell*" class="form-input">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" placeholder="Email*" class="form-input">
+                        </div>
+                        <div class="form-item">
+                            <textarea type="text" placeholder="Message" class="form-input"></textarea>
+                        </div>
+                        <button class="styled-button">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__content">
@@ -199,7 +224,7 @@
                 <div class="section__help__content__main">
                     <h5 class="section-help__title">How to Pass Your Exam</h5>
                     <p class="section-help__descr">Once you complete your Pre-Licensing education, you’ll take your state licensing exam. To better prepare you to ace the exam, we’ve built the industry’s most comprehensive interactive Exam Prep. This is included in our Standard, Value, and Premium packages, and you can start by taking an assessment to gauge your competencies for each topic.</p>
-                    <a href="" class="styled-button">Shop exam prep</a>
+                    <button id="modal-trigger" class="styled-button">Shop exam prep</button>
                 </div>
                 <img src="./assets/images/section-help-image.png" alt="Ce Pony Help" width="472" height="520" class="section-help__img">
             </div>

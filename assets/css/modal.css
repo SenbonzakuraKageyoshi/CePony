@@ -1,0 +1,77 @@
+.modal{
+    position: fixed;
+    z-index: 150;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #31313188;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content{
+    max-width: 410px;
+    width: 100%;
+    background: var(--light-black);
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    margin: 15% auto;
+    height: auto;
+    position: relative;
+    padding: 60px 0px;
+}
+
+.close-modal{
+    background: transparent;
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    border: none;
+    z-index: 500;
+    cursor: pointer;
+}
+
+.modal-content__main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal .styled-button{
+    background: var(--yellow);
+    color: var(--black);
+    display: block;
+    margin: 0 auto;
+}
+
+.modal .styled-button:hover{
+    background: var(--light-black);
+    color: var(--white);
+}
+
+.modal-name{
+    font-size: 32px;
+    line-height: 30px;
+    font-family: 'Days One';
+    color: var(--white);
+}
+
+.modal .form-input{
+    width: 310px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.modal .form{
+    margin-top: 30px;
+}

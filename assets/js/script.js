@@ -2,6 +2,21 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.querySelector('.menu-button');
     const menu = document.querySelector('.header__nav');
 
+    const modal = document.querySelector('.modal');
+    const modalTriggers = document.querySelectorAll('#modal-trigger');
+    const closeModalButton = document.querySelector('.close-modal');
+
+    const openModal = () => {
+        modal.classList.add('active');
+    };
+    
+    const closeModal = () => {
+        modal.classList.remove('active');
+    };
+
+    closeModalButton.addEventListener('click', closeModal);
+    modalTriggers.forEach((el) => el.addEventListener('click', openModal))
+
     const menuHandler = () => {
         menu.classList.toggle('active');
     };

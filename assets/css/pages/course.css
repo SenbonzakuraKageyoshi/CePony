@@ -316,7 +316,9 @@ aside{
         font-size: 20px;
     }
 
-    .styled-button{
+    .course__main-info .styled-button{
+        margin-left: 0;
         margin-top: 16px;
     }
+    
 }

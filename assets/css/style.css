@@ -4,6 +4,7 @@
 @import './footer.css';
 @import './swiper.css';
 @import './vars.css';
+@import './modal.css';
 
 html{
     overflow-x: hidden;
