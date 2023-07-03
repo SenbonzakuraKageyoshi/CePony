@@ -102,7 +102,7 @@ aside{
     align-items: flex-end;
 }
 
-.styled-button{
+.course__main-info .styled-button{
     background: var(--yellow);
     color: var(--black);
     margin-left: 40px;
