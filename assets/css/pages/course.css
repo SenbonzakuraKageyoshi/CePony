@@ -1,3 +1,5 @@
+@import '../form.css';
+
 .section-top{
     padding: 41px 0px 100px 0px;
 }
@@ -126,14 +128,86 @@ aside{
     margin-top: 30px;
 }
 
+.course__details-item{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.course__details-item img{
+    margin-right: 21px;
+}
+
+.course__details-item:not(:first-child){
+    margin-top: 35px;
+}
+
+.section-other-info{
+    margin-top: 50px;
+}
+
+.course__includes{
+    padding: 63px 28px;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+}
+
+.course__includes__title{
+    font-size: 32px;
+    line-height: 42px;
+    font-family: 'Days One';
+}
+
+.course__includes-item{
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.course__includes-item:not(:first-child){
+    margin-top: 10px;
+}
+
+.course__includes__list{
+    padding-left: 20px;
+    margin-top: 22px;
+}
+
+.course__includes-item{
+    list-style: disc;
+}
+
+.course__includes{
+    margin-top: 40px;
+}
+
 @media(max-width: 1200px){
+    .course__includes__title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .course__includes{
+        padding: 59px 37px;
+    }
+
+    .course__includes-item{
+        font-size: 18px;
+    }
+
+    .course-info__wrapper{
+        max-width: 930px;
+    }
+
     aside{
         display: none;
     }
 
     .course__main-info__wrapper{
-        max-width: 240px;
-
+        width: 240px;
+        max-width: none;
+        margin-right: 20px;
+        flex-shrink: 0;
     }
 
     .course__main-info__wrapper{
@@ -147,10 +221,102 @@ aside{
 
     .course__main-info{
         display: flex;
+        justify-content: space-between;
+    }
+
+    .section-top__content{
+        display: block;
     }
 
     .course-descr__item{
         max-width: 630px;
         margin-left: 30px;
+    }
+
+    .course-descr__item{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 890px){
+    .course__includes__title{
+        font-size: 20px;
+    }
+
+    .course__includes{
+        padding: 46px 29px;
+    }
+
+    .course__includes-item{
+        font-size: 16px;
+    }
+
+    .course__details-item img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .course-name::before{
+        width: 36px;
+        height: 36px;
+    }
+
+    .section-top{
+        padding: 41px 0px 50px 0px;
+    }
+
+    .course-name{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 12px 0px 0px 14px;
+    }
+
+    .course__main-info__wrapper{
+        max-width: 222px;
+        align-items: flex-start;
+    }
+
+    .course__details-item{
+        align-items: flex-start;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .course__main-info{
+        flex-direction: column;
+    }
+
+    .course-descr__item{
+        margin-left: 0px;
+    }
+
+    .course-info__wrapper{
+        max-width: 100%;
+    }
+
+    .course-descr__item{
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 35px;
+    }
+
+    .course__main-info-item__value{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .course__main-info-item__name{
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .course__main-info-price{
+        font-size: 20px;
+    }
+
+    .styled-button{
+        margin-top: 16px;
     }
 }
