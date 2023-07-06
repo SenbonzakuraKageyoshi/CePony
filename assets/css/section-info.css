@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .section-info{
     padding: 45px 0px 60px 0px;
 }
@@ -22,10 +26,10 @@
 .section-info .header__nav-sublink__list{
     position: absolute;
     top: 20px;
-    left: -75px;
+    right: 0px;
     background: var(--white);
-    padding: 25px 0px 25px 13px;
-    width: 300px;
+    padding: 18px 13px 30px 14px;
+    width: 315px;
     border: 2px solid #000;
     border-radius: 25px;
     opacity: 0;
@@ -42,6 +46,10 @@
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.section-info__items-item li div{
+    align-items: center;
 }
 
 .section-info__actions-item{
@@ -70,6 +78,14 @@
     margin-top: 12px;
 }
 
+.section-info__items-item div:not(:first-child){
+    margin-top: 3px;
+}
+
+.header__nav-sublink__list li:not(:first-child){
+    margin-top: 0px !important;
+}
+
 .section-info__items-item:first-child li:last-child:hover .header__nav-sublink__list{
     opacity: 1;
     visibility: visible;
@@ -88,6 +104,11 @@
     display: flex;
 }
 
+.header__nav-sublink__list li, a{
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
 .section-info__items-item-name{
     font-size: 32px;
     line-height: 40px;
@@ -98,7 +119,16 @@
     flex-direction: column;
 }
 
+.submenu-button{
+    margin-left: 6px;
+}
+
 @media(max-width: 1300px){
+    .section-info{
+        padding: 45px 0px 60px 0px;
+        overflow: visible;
+    }
+
     .section-info__items-item-name{
         font-size: 24px;
         line-height: 34px;
@@ -136,6 +166,14 @@
 }
 
 @media(max-width: 780px){
+    .section-info .header__nav-sublink__list{
+        width: 270px;
+    }
+
+    .header__nav-sublink__list li, a{
+        font-size: 14px !important;
+    }
+
     .section-info__items-item-name{
         font-size: 20px;
         line-height: 30px;

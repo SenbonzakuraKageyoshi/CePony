@@ -180,7 +180,7 @@
     .header__nav{
         background: var(--gray);
         position: absolute;
-        top: 74px;
+        top: 60px;
         right: 0;
         padding: 40px 30px;
         opacity: 0;
