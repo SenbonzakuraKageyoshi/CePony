@@ -75,7 +75,7 @@ body{
 }
 
 .section-info__items-item li:not(:first-child){
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 .section-info__items-item div:not(:first-child){
