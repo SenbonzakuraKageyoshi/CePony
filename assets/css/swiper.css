@@ -1,7 +1,6 @@
 .swiper{
-    margin-top: 50px;
+    margin-top: 70px;
     max-width: 100%;
-    min-height: 250px;
 }
 
 .swiper__wrapper{
@@ -32,14 +31,14 @@
     color: var(--yellow);
 }
 
-@media(max-width: 1350px){
+@media(max-width: 1200px){
     .swiper{
-        min-height: 220px;
+        margin-top: 50px;
     }
 }
 
 @media(max-width: 780px){
     .swiper{
-        min-height: 150px;
+        margin-top: 20px;
     }
 }

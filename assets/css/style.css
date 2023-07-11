@@ -71,11 +71,7 @@ h1, h2, h3, h4, h5{
     display: block;
 }
 
-@media(max-width: 1350px){
-    .swiper{
-        min-height: 220px;
-    }
-    
+@media(max-width: 1350px){ 
     .title{
         font-size: 40px;
         line-height: 55px;
