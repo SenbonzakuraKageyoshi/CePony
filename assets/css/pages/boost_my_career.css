@@ -10,3 +10,12 @@
 .section-info__content{
     align-items: flex-start;
 }
+
+.section-info__items-item .header__nav-sublink__list li div{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.section-info__items-item .header__nav-sublink__list li div:before{
+    content: none;
+}

@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание сайта"> 
+    <meta name="keywords" content="Ключевые слова,Ключевые слова">
+    <meta name="author" content="Автор">
+    <meta name="robots" content="index">
+
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://site.ru">
+    <meta property="og:description" content="Описание">
+
+    <link rel="icon" href="./assets/favicons/" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./assets/favicons/" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/pages/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <title>Ce Pony</title>
+
+    <title itemprop="headline">Ce Pony</title>
 </head>
 <body>
     <div class="modal">
@@ -375,8 +392,22 @@
             <div class="footer__rights">© 2023 CE PONY. ALL RIGHTS RESERVED</div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/swiper.js"></script>
 </body>
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "Step by step",
+        "url" : "https://engstepbystep.ru",
+        "sameAs" : [
+        "https://vk.com/stepbystep_english",
+        "https://instagram.com/stepbystep_english_club",
+        "https://www.facebook.com/адрес",
+        "https://twitter.com/адрес"
+        ]
+    }
+</script>
 </html>

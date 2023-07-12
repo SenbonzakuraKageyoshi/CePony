@@ -1,5 +1,5 @@
 .swiper{
-    margin-top: 70px;
+    margin-top: 70px !important;
     max-width: 100%;
 }
 
@@ -29,16 +29,4 @@
 
 .swiper-button-prev:hover:after, .swiper-button-next:hover:after{
     color: var(--yellow);
-}
-
-@media(max-width: 1200px){
-    .swiper{
-        margin-top: 50px;
-    }
-}
-
-@media(max-width: 780px){
-    .swiper{
-        margin-top: 20px;
-    }
 }
